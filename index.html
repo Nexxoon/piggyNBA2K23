@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="./font/caidan/iconfont.css" />
+	<link rel="stylesheet" href="css/mobile.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" sc/>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.header{
+			width: 100%;
+			height: 70px;
+			position: fixed;
+		}
+		.content1{
+			float: left;
+			width: 70%;
+			height: 70px;
+			background-color: black;
+		}
+		.content1 a{
+			margin-left: 9.375rem;
+		}
+		.content1 img{
+			margin-top: 1.3rem;
+		}
+		.icon-caidan{
+			width: 40px;
+			font-size: 25px;
+			font-weight: bold;
+			color: red;
+		}
+		.content2{
+			text-align: center;
+			float: left;
+			width: 20%;
+			height: 70px;
+			background-color: black;
+		}
+		.content2 a{
+			height: 70px;
+			text-decoration: none;
+			color: white;
+		}
+		.content2 ul{
+			background-color: red;
+			margin-left: 65%;
+			margin-top: 1.2rem;
+			width: 100px;
+			height: 38px;
+			text-decoration: none;
+			color: white;
+		}
+		.content2 a:hover{
+			transition: 0.1s;
+			color: red;
+		}
+		.content2 ul:hover{
+			background-color: white;
+			transition: 0.1s;
+		}
+		.content2 p{
+		padding-top: 5px;
+		font-weight: bolder;
+		font-size: 20px;
+		}
+		.content3{
+			float: left;
+			width: 10%;
+			height: 70px;
+			background-color: black;
+		}
+		.content3 a{
+			text-decoration: none;
+		}
+		.content3 p{
+			margin-top: 1.60rem;
+		}
+		.content3 ul{
+			margin-left: 0.5rem;
+			margin-top: 1.40rem;
+		}
+		.content3 ul:hover{
+			display: block;
+		}
+		.content3 li{
+			
+		}
+		.mobilehome{
+			display: none;
+		}
+		.home{
+			text-align: center;
+			float: left;
+			margin-top: 45px;
+			width: 100%;
+			height: 56.25rem;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-image: url(./img/homepc.jpg);
+		}
+		.home p{
+			padding-top: 8px;
+			width: 10rem;
+			height: 2.5rem;
+			border: 1px solid red;
+			position: absolute;
+			left: 45%;
+			top: 85%;
+			color: white;
+			font-weight: bolder;
+		}
+		.home p:hover{
+			background-color: white;
+			color: black;
+			transition: 0.4s;
+		}
+		.home a{
+			font-size: 23px;
+		}
+		.update{
+			float: left;
+			width: 100%;
+			height: 30rem;
+			background-color: black;
+		}
+		.update1{
+			float: left;
+			width: 50%;
+			height: 30rem;
+		}
+		.update1 h1{
+			color: white;
+			font-size: 50px;
+			padding-top:10%;
+			padding-left: 40%;
+		}
+		.update1 p{
+			color: white;
+			font-size: 28px;
+			padding-top: 3%;
+			padding-left: 15%;
+		}
+		.update1 a{
+			color: white;
+			text-decoration: none;
+		}
+		.more{
+			float: left;
+			width: 250px;
+			height: 50px;
+			margin-left: 38%;
+			margin-top: 5%;
+			background-color: red;
+		}
+		.more h3{
+			color: white;
+			font-size: 28px;
+			padding-top: 2%;
+			padding-left: 17%;
+		}
+		.more h3:hover{
+			color: black;
+		}
+		.more:hover{
+			background-color: white;
+			transition: 0.5s;
+		}
+		.more a:hover{
+			background-color: white;
+			color: red;
+			transition: 0.5s;
+		}
+		.updatepic{
+			width: 49%;
+			float: left;
+		}
+		.updatepic img{
+			width: 85%;
+			margin-top: 2.1875rem;
+			margin-left: 12%;
+		}
+		.banben{
+			text-align: center;
+			float: left;
+			width: 100%;
+			height:10rem;
+			background-color: white;
+		}
+		.banben h1{
+			padding-top: 5%;
+			font-size: 45px;
+		}
+		.choice{
+			float: left;
+			width: 100%;
+			height: 54rem;
+			background-color: white;
+		}
+		.choice1,.choice2,.choice3{
+			float: left;
+			margin-left: 3%;
+			width: 30%;
+			height: 54rem;
+		}
+		.choice1{
+			background: url(./img/NBA23-WEBSITE-PRE_ORDER-HOMPAGE-MODULE2-RETAIL_CAROUSEL-MJ_EDITION-425x535.avif);
+			background-repeat: no-repeat;
+			background-size: 100% 550px;
+		}
+		
+		.choice2{
+			background: url(./img/NBA23-WEBSITE-PRE_ORDER-HOMPAGE-MODULE2-RETAIL_CAROUSEL-CROSSGEN_EDITION-425x535.avif);
+			background-repeat: no-repeat;
+			background-size: 100% 550px;
+		}
+		
+		.choice3{
+			background: url(./img/homemobile.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 550px;
+		}
+		.choice1 h1,.choice2 h1,.choice3 h1{
+			margin-top: 115%;
+			text-align: center;
+		}
+		.choice1 ul,.choice2 ul,.choice3 ul{
+			border: 2px solid black;
+			background-color: red;
+			margin-left: 38%;
+			margin-top: 1.2rem;
+			width: 150px;
+			height: 50px;
+			text-decoration: none;
+			color: white;
+		}
+		.choice1 a:hover,.choice2 a:hover,.choice3 a:hover{
+			transition: 0.1s;
+			color: black;
+		}
+		.choice1 ul:hover,.choice2 ul:hover,.choice3 ul:hover{
+			border: 2px solid black;
+			background-color: white;
+			transition: 0.4s;
+		}
+		.choice1 p,.choice2 p,.choice3 p{
+		padding-top: 10px;
+		padding-left: 18%;
+		font-weight: bolder;
+		font-size: 20px;
+		}
+		.choice1 a,.choice2 a,.choice3 a{
+			height: 70px;
+			text-decoration: none;
+			color: white;
+		}
+		.choice1 h3,.choice2 h3,.choice3 h3{
+			padding-top: 7%;
+			padding-left: 8%;
+			font-size: 25px;
+			font-weight: bolder;
+		}
+	</style>
+	<body>
+		<div class="header">
+			<div class="content1">
+			<a href="#"><img src="./img/N23_LOGO_SHORT_WHITEk.png" width="140px"/></a>
+			</div>
+			<div class="content2">
+				<ul>
+				<a href="#"><p>立即购买</p></a>
+				</ul>
+			</div>
+			<div class="content3">
+				<p><a href="#" class="iconfont icon-caidan"></a></p>
+				<ul>
+					<a href="#"></a>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="home">
+			<a href="#"><p>新 赛 季</p></a>
+		</div>
+			
+		<div class="update">
+			<div class="update1">
+				<h1>补丁更新</h1>
+				<p>随时了解最新的《NBA 2K23》补丁更新，因为它们已针对新一代和当前一代游戏机发布。</p>
+				<div class="more">
+					<a href="#"><h3>了解更多信息</h3></a>
+				</div>
+			</div>
+			
+			<div class="updatepic">
+					<img src="./img/Patch_Update_Thumbnail.jpg" alt="" />
+				</div>
+		</div>
+		
+		<div class="banben">
+			<h1>选择你需要购买的版本</h1>
+		</div>
+		
+		<div class="choice">
+			<div class="choice1">
+				<h1>《NBA 2K23》迈克尔·乔丹版</h1>
+				<ul>
+				<a href="#"><p>立 即 购 买</p></a>
+				</ul>
+				<h3>改写历史，重温迈克尔·乔丹在《NBA 2K23》中的名场面！</h3>
+			</div>
+			
+			<div class="choice2">
+				<h1>《NBA 2K23》数字豪华版</h1>
+				<ul>
+				<a href="#"><p>立 即 购 买</p></a>
+				</ul>
+				<h3>在《NBA 2K23》中，通过数字豪华版充分发挥你的潜力。</h3>
+			</div>
+			
+			<div class="choice3">
+				<h1>《NBA 2K23》标准版</h1>
+				<ul>
+				<a href="#"><p>立 即 购 买</p></a>
+				</ul>
+				<h3>响应《NBA 2K23》的伟大号召，赢得尊重。</h3>
+			</div>
+		</div>
+	</body>
+</html>

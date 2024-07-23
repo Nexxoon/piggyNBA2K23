@@ -1,0 +1,28 @@
+@media(max-width:500px) {
+	.header{
+	}
+	.content1{
+		width: ;
+	}
+	.content1 img{
+		position: absolute;
+		left: 0;
+	}
+	.content2 ul{
+		position: absolute;
+		left: -5%;
+	}
+	.home{
+
+	}
+	
+	.update{
+		
+	}
+	.banben{
+		
+	}
+	.choice{
+		
+	}
+}

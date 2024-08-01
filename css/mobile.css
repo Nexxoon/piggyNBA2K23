@@ -18,7 +18,7 @@
 	}
 	.home a{
 		position: absolute;
-		top: 85%;
+		top: 90%;
 		left:32%;
 	}
 	.home{
@@ -43,18 +43,13 @@
 		height: 250px;
 		padding-top: 25%;
 	}
-	.banben{
-		
-	}
-	.choice{
-		
-	}
 	.choice1{
+		float: left;
 		padding-right: 65%;
 	}
 	.choice1 h1{
 		width: 200%;
-		padding-top: 315%;
+		padding-top: 350%;
 		margin-left: 50%;
 	}
 	.choice1 h3{
@@ -71,11 +66,12 @@
 	
 	
 	.choice2{
+		float: left;
 		padding-right: 65%;
 	}
 	.choice2 h1{
 		width: 200%;
-		padding-top: 315%;
+		padding-top: 350%;
 		margin-left: 50%;
 	}
 	.choice2 h3{
@@ -92,11 +88,12 @@
 	
 	
 	.choice3{
+		float: left;
 		padding-right: 65%;
 	}
 	.choice3 h1{
 		width: 200%;
-		padding-top: 315%;
+		padding-top: 350%;
 		margin-left: 50%;
 	}
 	.choice3 h3{
